@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools==70.0.0", "wheel==0.45.1"]
+requires = ["setuptools==80.10.2", "wheel==0.45.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -16,34 +16,33 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-requires-python = ">=3.11,<3.13"
+requires-python = ">=3.12,<3.13"
 license = { "text" = "MIT" }
 dependencies = [
-    "urllib3==2.6.3",
-    "accelerate==1.0.1",
-    "evaluate==0.4.3",
-    "eval-hub-sdk[adapter]==0.1.7",
-    "datasets==3.1.0",
+    "urllib3==2.7.0",
+    "accelerate==1.13.0",
+    "evaluate==0.4.6",
+    "eval-hub-sdk[adapter]==0.4.0",
+    "datasets==4.8.5",
     "jsonlines==4.0.0",
-    "numexpr==2.10.1",
-    "peft==0.13.2",
-    "pybind11==2.13.6",
-    "pytablewriter==1.2.0",
+    "numexpr==2.14.1",
+    "peft==0.19.1",
+    "pybind11==3.0.4",
+    "pytablewriter==1.2.1",
     "rouge-score==0.1.2",
-    "sacrebleu==2.4.3",
-    "scikit-learn==1.5.2",
+    "sacrebleu==2.6.0",
+    "scikit-learn==1.9.0",
     "sqlitedict==2.1.0",
-    "torch==2.6.0",
-    "tqdm-multiprocess==0.0.11",
-    "transformers==4.48.0",
-    "zstandard==0.23.0",
-    "dill==0.3.8",
+    "torch==2.11.0",
+    "transformers==4.57.6",
+    "zstandard==0.25.0",
+    "dill==0.4.1",
     "word2number==1.1",
-    "more_itertools==10.5.0",
-    "unitxt==1.17.2",
-    "jiwer==3.0.5",
-    "boto3==1.42.12",
-    "olot==0.1.15",
+    "more_itertools==11.1.0",
+    "unitxt==1.26.10",
+    "jiwer==4.0.0",
+    "boto3==1.43.23",
+    "olot==0.1.17",
 ]
 
 [tool.setuptools.packages.find]
@@ -63,13 +62,13 @@ Repository = "https://github.com/EleutherAI/lm-evaluation-harness"
 
 [project.optional-dependencies]
 api = [
-    "requests==2.32.5",
-    "aiohttp==3.13.3",
-    "tenacity==9.0.0",
-    "tqdm==4.66.6",
-    "tiktoken==0.8.0",
+    "requests==2.34.2",
+    "aiohttp==3.14.0",
+    "tenacity==9.1.4",
+    "tqdm==4.67.3",
+    "tiktoken==0.13.0",
 ]
-ifeval = ["langdetect==1.0.9", "immutabledict==4.2.1", "nltk==3.9.3"]
+ifeval = ["langdetect==1.0.9", "immutabledict==4.3.1", "nltk==3.9.4"]
 math = ["sympy>=1.12", "antlr4-python3-runtime==4.11", "math_verify[antlr4_11_0]"]
 dev = [
     "pytest==8.3.3",
