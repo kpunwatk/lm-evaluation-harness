@@ -5,3 +5,5 @@ caching
 .idea
 .tekton
 .venv
+# Not installed into the image; keep it out of the build context/SBOM.
+poetry.lock

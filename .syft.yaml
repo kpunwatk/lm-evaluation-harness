@@ -1,0 +1,9 @@
+# Konflux uses Syft to generate container SBOMs.
+# Syft config: https://github.com/anchore/syft/wiki/configuration
+#
+# poetry.lock is a build/dev resolution file and is not used to install the
+# runtime image (Dockerfile installs requirements.txt only). Cataloging it
+# causes false-positive CVEs for optional/dev-only packages such as
+# virtualenv (via pre-commit).
+exclude:
+  - "**/poetry.lock"
